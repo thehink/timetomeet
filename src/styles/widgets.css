@@ -1,0 +1,270 @@
+.ui-datepicker {
+  background: #fff;
+  padding: 10px;
+  display: none;
+}
+.ui-datepicker {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+  border: none !important;
+  border-radius: 4px;
+  margin-top: 10px !important;
+}
+.ui-datepicker:before {
+  content: '';
+  position: absolute;
+  right: 50%;
+  top: -16px;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  margin-right: -8px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  position: absolute;
+  cursor: pointer;
+  left: 2px;
+  top: 14px;
+}
+.ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  cursor: pointer;
+  right: 2px;
+  top: 14px;
+}
+.ui-datepicker .ui-datepicker-header {
+  padding: 6px 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ui-datepicker .ui-icon {
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  text-indent: -99999px;
+  height: 8px;
+  width: 6px;
+}
+.ui-datepicker .ui-icon.ui-icon-circle-triangle-w {
+  background-image: url("../images/date-prev.png");
+}
+.ui-datepicker .ui-icon.ui-icon-circle-triangle-e {
+  background-image: url("../images/date-next.png");
+}
+.ui-datepicker .ui-datepicker-calendar {
+  width: 100%;
+}
+.ui-datepicker .ui-datepicker-calendar tr th {
+  text-align: center;
+  color: #b0b1b2;
+}
+.ui-datepicker .ui-datepicker-calendar tr td {
+  text-align: center;
+  padding: 2px 5px;
+}
+.ui-datepicker .ui-datepicker-calendar tr td {
+  font-size: 13px !important;
+  line-height: 13px !important;
+  color: #565658 !important;
+}
+.ui-datepicker .ui-datepicker-calendar tr td a {
+  color: #565658;
+  text-decoration: none;
+  display: block;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  padding-top: 6px;
+}
+.ui-datepicker .ui-datepicker-calendar tr td a.ui-state-active, .ui-datepicker .ui-datepicker-calendar tr td a.ui-state-hover {
+  background: #3fb436;
+  color: #fff;
+  border-radius: 100%;
+}
+.ui-datepicker .ui-datepicker-calendar tr td a.ui-state-hover {
+  opacity: 0.6;
+}
+.ui-datepicker .ui-datepicker-calendar tr td.ui-datepicker-other-month a {
+  color: #acacac;
+}
+
+.ui-timepicker-standard {
+  z-index: 3 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.ui-timepicker-standard {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+  border: none !important;
+  border-radius: 4px;
+  margin-top: 10px !important;
+}
+.ui-timepicker-standard:before {
+  content: '';
+  position: absolute;
+  right: 50%;
+  top: -16px;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  margin-right: -8px;
+}
+.ui-timepicker-standard .ui-timepicker ul li {
+  padding: 6px 0;
+}
+.ui-timepicker-standard .ui-timepicker ul li:not(:last-child) {
+  border-bottom: 1px solid #f3f4f5;
+}
+.ui-timepicker-standard .ui-timepicker ul li a {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.ui-timepicker-standard .ui-timepicker ul li a {
+  font-size: 13px !important;
+  line-height: 13px !important;
+  color: #565658 !important;
+}
+.ui-timepicker-standard .ui-timepicker ul li a.ui-state-hover {
+  border: none;
+  text-decoration: underline;
+  background: none;
+}
+
+.chosen-container .chosen-single {
+  padding-top: 8px;
+}
+.chosen-container .chosen-single {
+  font-size: 13px !important;
+  line-height: 13px !important;
+  color: #565658 !important;
+}
+.chosen-container .chosen-results li {
+  padding: 10px 8px !important;
+}
+.chosen-container .chosen-results li {
+  font-size: 13px !important;
+  line-height: 13px !important;
+  color: #565658 !important;
+}
+.chosen-container .chosen-results li:not(:last-child) {
+  border-bottom: 1px solid #f3f4f5;
+}
+.chosen-container .chosen-results li.highlighted {
+  text-decoration: underline;
+}
+
+.bx-wrapper .bx-pager {
+  height: 16px;
+  margin: 10px 0 0;
+  width: 100%;
+  text-align: center;
+}
+.bx-wrapper .bx-pager .bx-pager-item {
+  display: inline-block;
+  margin: 0 5px;
+}
+.bx-wrapper .bx-pager .bx-pager-item a {
+  background: #c6c6c6 none repeat scroll 0 0;
+  border-radius: 50%;
+  display: block;
+  font-size: 0;
+  height: 8px;
+  text-indent: -10000px !important;
+  width: 8px;
+}
+.bx-wrapper .bx-pager .bx-pager-item a.active {
+  background: #3fb436;
+}
+.bx-wrapper .bx-controls-direction a {
+  width: 20px;
+  height: 36px;
+  top: 50%;
+  margin-top: -18px;
+  position: absolute;
+}
+.bx-wrapper .bx-controls-direction .bx-prev {
+  background: url("../images/arrow-prev.png") no-repeat scroll 0 0;
+  left: -5%;
+}
+.bx-wrapper .bx-controls-direction .bx-prev:hover {
+  background: url("../images/arrow-prev-hover.png") no-repeat scroll 0 0;
+}
+.bx-wrapper .bx-controls-direction .bx-next {
+  background: url("../images/arrow-next.png") no-repeat scroll 0 0;
+  right: -5%;
+}
+.bx-wrapper .bx-controls-direction .bx-next:hover {
+  background: url("../images/arrow-next-hover.png") no-repeat scroll 0 0;
+}
+
+/*map styles begin*/
+#map {
+  height: 325px;
+  width: 100%;
+}
+
+.gm-style-iw * {
+  display: block;
+}
+
+.gm-style-iw h4, .gm-style-iw p {
+  margin: 0;
+  padding: 0;
+}
+
+.gm-style-iw a {
+  color: #4272db;
+}
+
+/*map styles end*/
+/*range slider begin*/
+.ui-slider {
+  background: #dddddd;
+  cursor: pointer;
+  height: 2px;
+  margin: 16px 0 8px 0;
+  position: relative;
+  width: 100% !important;
+}
+.ui-slider .ui-slider-range {
+  height: 2px;
+  position: absolute;
+  background: #3fb436;
+}
+.ui-slider span {
+  display: inline-block;
+  height: 12px;
+  position: absolute;
+  top: -6px;
+  width: 12px;
+  border-radius: 100%;
+  background: #3fb436;
+}
+
+/*range slider end*/
+@media only screen and (max-width: 767px) {
+  .ui-datepicker {
+    width: 280px !important;
+    left: 50% !important;
+    margin-left: -140px !important;
+  }
+}
+.vscrollerbar {
+  background-color: #acacae;
+  border: none;
+  width: 8px;
+  z-index: 4;
+}
+
+.scrollgeneric {
+  font-size: 1px;
+  left: 97.75% !important;
+  line-height: 1px;
+  position: absolute;
+  top: 0;
+}
+
+.vscrollerbasebeg {
+  background: #dededf none repeat scroll 0 0 !important;
+  width: 8px !important;
+  z-index: 3;
+}

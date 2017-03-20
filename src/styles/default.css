@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url("fonts/montserrat-bold-webfont.eot");
+  src: url("fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-bold-webfont.woff2") format("woff2"), url("fonts/montserrat-bold-webfont.woff") format("woff"), url("fonts/montserrat-bold-webfont.ttf") format("truetype"), url("fonts/montserrat-bold-webfont.svg#montserrat-bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat-semibold';
+  src: url("fonts/montserrat-semibold-webfont.eot");
+  src: url("fonts/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("fonts/montserrat-semibold-webfont.woff") format("woff"), url("fonts/montserrat-semibold-webfont.ttf") format("truetype"), url("fonts/montserrat-semibold-webfont.svg#montserrat-semibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url("fonts/montserrat-regular-webfont.eot");
+  src: url("fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-regular-webfont.woff2") format("woff2"), url("fonts/montserrat-regular-webfont.woff") format("woff"), url("fonts/montserrat-regular-webfont.ttf") format("truetype"), url("fonts/montserrat-regular-webfont.svg#montserrat-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat-light';
+  src: url("fonts/montserrat-light-webfont.eot");
+  src: url("fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-light-webfont.woff2") format("woff2"), url("fonts/montserrat-light-webfont.woff") format("woff"), url("fonts/montserrat-light-webfont.ttf") format("truetype"), url("fonts/montserrat-light-webfont.svg#montserrat-light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'montserrat-regular';
+  font-size: 13px;
+  line-height: 145%;
+}
+
+img {
+  border: 0px;
+  display: block;
+}
+
+a {
+  color: #3fb436;
+  outline: none;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color: #3fb436;
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.clear {
+  clear: both;
+  height: 0px;
+  font-size: 0;
+  overflow: hidden;
+}
+
+p {
+  color: #565658;
+  line-height: 145%;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 145%;
+  margin-top: 0 !important;
+}
+
+input {
+  line-height: 140%;
+  font-size: 13px;
+  color: #565658;
+}
+
+select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  background: white url("../images/chosen-drop.png") no-repeat scroll 95% 16px;
+}
+
+.styled_select {
+  position: relative;
+}
+.styled_select:before {
+  background: url("../images/persons.png") no-repeat scroll 0 0;
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  width: 14px;
+  height: 14px;
+  content: '';
+  z-index: 2;
+}
+
+input, select, textarea {
+  -webkit-appearance: none;
+}
+
+label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+
+header:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.container,
+.container-fluid,
+header .main-menu {
+  padding: 0;
+}
+
+header .navbar-header,
+.main-menu,
+.main-menu ul,
+.submenu ul,
+.navbar.navbar-default {
+  margin: 0 !important;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #a8a8a9 !important;
+  background: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1170px) {
+  .container {
+    width: 1170px;
+  }
+}

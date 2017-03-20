@@ -1,0 +1,369 @@
+/*mixins end*/
+.content {
+  /*locations begin*/
+  /*locations end*/
+  /*howit begin*/
+  /*howit end*/
+  /*review begin*/
+  /*review end*/
+  /*partners begin*/
+  /*partners end*/
+  /*who we begin*/
+  /*who we end*/
+  /*our team begin*/
+  /*our team end*/
+  /*faq begin*/
+}
+.content .locations {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.content .locations .heading .title, .content .locations .heading h2 {
+  color: #26262a;
+  font-size: 32px;
+  font-family: 'montserrat-semibold';
+  text-align: center;
+  margin-bottom: 60px;
+}
+.content .locations .row > div:nth-of-type(4n+1) {
+  clear: both;
+}
+.content .locations .location_item {
+  margin-bottom: 30px;
+  padding: 3px;
+  box-shadow: 0 1px 1px 1px rgba(236, 236, 236, 0.9);
+  position: relative;
+}
+.content .locations .location_item a .location_image {
+  overflow: hidden;
+  position: relative;
+}
+.content .locations .location_item a .location_image:after {
+  background: rgba(36, 39, 35, 0.32);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  content: '';
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+}
+.content .locations .location_item a .location_image img {
+  width: 100%;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+}
+.content .locations .location_item a:hover .location_image:after {
+  background: rgba(36, 39, 35, 0.02);
+}
+.content .locations .location_item a:hover .location_image img {
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.content .locations .location_item a .location_descr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 25%;
+}
+.content .locations .location_item a .location_descr .name {
+  font-size: 32px;
+  line-height: 36px;
+  opacity: 1;
+}
+.content .locations .location_item a .location_descr p {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.6;
+}
+.content .locations .more {
+  margin-top: 40px;
+  text-align: center;
+}
+.content .locations .more a {
+  font-size: 16px;
+  padding: 10px 0;
+  border-radius: 4px;
+  display: block;
+}
+.content .locations .more a {
+  color: #fff;
+  text-decoration: none;
+  background: #3fb436;
+  box-sizing: border-box;
+  text-align: center;
+}
+.content .locations .more a:hover {
+  opacity: 0.8;
+}
+.content .howitworks {
+  background: #f8f8f8;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.content .howitworks {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.content .howitworks .heading .title, .content .howitworks .heading h2 {
+  color: #26262a;
+  font-size: 32px;
+  font-family: 'montserrat-semibold';
+  text-align: center;
+  margin-bottom: 60px;
+}
+.content .howitworks .howit_item .howit_image {
+  text-align: center;
+  margin-bottom: 20px;
+  min-height: 90px;
+}
+.content .howitworks .howit_item .howit_image img {
+  display: inline-block;
+}
+.content .howitworks .howit_item .howit_descr {
+  text-align: center;
+}
+.content .howitworks .howit_item .howit_descr .name {
+  color: #26262a;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.content .howitworks .howit_item .howit_descr p {
+  font-size: 14px;
+}
+.content .review {
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+.content .review {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.content .review .review_slider {
+  position: relative;
+}
+.content .review .review_slider .bx-wrapper {
+  margin: 0 auto;
+}
+.content .review .review_slider .review_item {
+  text-align: center;
+}
+.content .review .review_slider .review_item > p {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.content .review .review_slider .reviewer {
+  display: inline-block;
+  width: 150px;
+}
+.content .review .review_slider .reviewer p, .content .review .review_slider .reviewer img {
+  display: inline-block;
+}
+.content .review .review_slider .reviewer img {
+  margin-right: 10px;
+}
+.content .review .review_slider .reviewer .name {
+  font-size: 14px;
+  color: #26262a;
+  font-weight: bold;
+}
+.content .review:before {
+  position: absolute;
+  top: -40px;
+  left: 20%;
+  background: url("../images/quotes-up.png") no-repeat 0 0;
+  width: 155px;
+  height: 120px;
+  content: '';
+}
+.content .review:after {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  background: url("../images/quotes-down.png") no-repeat 0 0;
+  width: 146px;
+  height: 88px;
+  content: '';
+}
+.content .partners {
+  background: #5cca0c;
+}
+.content .partners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.content .partners .row > div {
+  text-align: center;
+}
+.content .partners .partner_logo {
+  display: inline-block;
+}
+.content .partners .partner_logo a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 60px;
+}
+.content .partners .partner_logo a img {
+  max-width: 100%;
+  width: auto;
+  display: inline-block;
+}
+.content .who_we {
+  background: #fff;
+}
+.content .who_we {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.content .who_we .heading .title, .content .who_we .heading h2 {
+  color: #26262a;
+  font-size: 32px;
+  font-family: 'montserrat-semibold';
+  text-align: center;
+  margin-bottom: 60px;
+}
+.content .who_we .text {
+  text-align: center;
+}
+.content .our_team {
+  background: #fff;
+}
+.content .our_team {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.content .our_team .heading .title, .content .our_team .heading h2 {
+  color: #26262a;
+  font-size: 32px;
+  font-family: 'montserrat-semibold';
+  text-align: center;
+  margin-bottom: 60px;
+}
+.content .our_team .more {
+  margin-top: 40px;
+  text-align: center;
+}
+.content .our_team .more a {
+  font-size: 16px;
+  padding: 10px 0;
+  border-radius: 4px;
+  display: block;
+}
+.content .our_team .more a {
+  color: #fff;
+  text-decoration: none;
+  background: #3fb436;
+  box-sizing: border-box;
+  text-align: center;
+}
+.content .our_team .more a:hover {
+  opacity: 0.8;
+}
+.content .our_team .teammate {
+  margin: 0 auto 30px;
+  max-width: 161px;
+}
+.content .our_team .teammate .teammate_img {
+  margin-bottom: 10px;
+  padding: 3px;
+  box-shadow: 0 1px 1px 1px rgba(236, 236, 236, 0.9);
+}
+.content .our_team .teammate .teammate_img img {
+  width: 100%;
+}
+.content .our_team .teammate .teammate_info .name {
+  color: #26262a;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.content .our_team .teammate .teammate_info .post {
+  color: #565658;
+  font-size: 12px;
+}
+.content .faq {
+  background: #fff;
+}
+.content .faq {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.content .faq .faq_nav {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.content .faq .faq_nav ul li {
+  margin-bottom: 16px;
+}
+.content .faq .faq_nav ul li a {
+  color: #565658;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-decoration: none;
+  padding-right: 12px;
+}
+.content .faq .faq_nav ul li a:hover, .content .faq .faq_nav ul li a.active {
+  color: #3fb436;
+  border-bottom: 2px solid #3fb436;
+}
+.content .faq .faq_item {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.content .faq .faq_item:not(:last-child) {
+  border-bottom: 1px solid #eeeeee;
+}
+.content .faq .faq_item .name {
+  color: #292f33;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/*responsive styles*/
+@media only screen and (max-width: 992px) {
+  .locations .row > div:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .howitworks .howit_item {
+    margin-bottom: 60px;
+  }
+
+  .review:before {
+    left: 5% !important;
+  }
+  .review:after {
+    right: 5% !important;
+  }
+  .review .review_slider {
+    max-width: 100% !important;
+  }
+  .review .review_slider .review_item p {
+    margin-bottom: 60px !important;
+  }
+
+  .partners .partner_logo {
+    margin: 10px 0;
+  }
+  .partners .partner_logo img {
+    width: 100% !important;
+  }
+
+  .our_team .row .col-xs-6:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
