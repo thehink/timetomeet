@@ -1,9 +1,11 @@
 # TimeToMeet Venue Page
 This is our idea for the venue page
 
-## Install & start dev environment
+## Install
 1. `git clone https://github.com/thehink/timetomeet.git`
 1. `npm install`
+
+## Start Dev Environment
 1. `npm start`
 
 ## Build Production
