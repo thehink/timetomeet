@@ -25,17 +25,19 @@ export default class PersonsPicker extends React.Component {
 		let value = this.state.value;
 
     return (
-      <div className="col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 col-xs-6 col-xs-offset-0 date">
-				<input
-            tabIndex = "1"
-            type = "number"
-						min = {0}
-						max = {500}
-            defaultValue = { value }
-            autoComplete = "off"
-            name = "persons"
-            placeholder = { lang.searchPersons }
-					/>
+      <div className="col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 col-xs-6 col-xs-offset-0 person">
+				<div className="styled_select">
+					<input
+	            tabIndex = "1"
+	            type = "number"
+							min = {0}
+							max = {500}
+	            defaultValue = { value }
+	            autoComplete = "off"
+	            name = "persons"
+	            placeholder = { lang.searchPersons }
+						/>
+				</div>
       </div>
     );
   }
