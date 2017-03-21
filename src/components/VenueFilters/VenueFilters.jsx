@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ShowSearchForm from '../ShowSearchForm';
+
 export default class VenueFilters extends React.Component {
 
 	componentDidMount(){
@@ -17,6 +19,13 @@ export default class VenueFilters extends React.Component {
 						</p>
 					</div>
 				</div>
+
+				<ShowSearchForm />
+					<div className="row">
+						<div className="ok">
+						<p className="form_notice">Ange antal personer och datum för din bokning</p>
+						</div>
+					</div>
       </div>
     );
   }
