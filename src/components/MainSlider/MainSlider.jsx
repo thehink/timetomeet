@@ -1,12 +1,10 @@
 import React from 'react'
 
-import venueData from '../../data/venue_data.json';
-
 export default class MainSlider extends React.Component {
 
-  state = {
-    slides: venueData.plantImages
-  }
+	state = {
+		slides: venueData.plantImages
+	}
 
   componentDidMount(){
     $(".venue_slider .bxslider").bxSlider({
