@@ -39,7 +39,7 @@ export default class VenueMap extends React.Component {
 
 
     return (
-			<div class="venue_map v_info" id="venue_map">
+			<div className="venue_map v_info" id="venue_map">
 				<div>
 					<div className="heading">
 						<h2 className="name">{ lang.venueMap }</h2>
