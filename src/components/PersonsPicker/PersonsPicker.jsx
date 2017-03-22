@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import createSearch from '../../helpers/createSearch.js';
 
 export default class PersonsPicker extends React.Component {
 

@@ -5,6 +5,7 @@ import VenueFilters from '../VenueFilters';
 import DescriptionData from '../DescriptionData';
 import Facilities from '../Facilities';
 import OptionsNearby from '../OptionsNearby';
+import VenueMap from '../VenueMap';
 
 export default class Venue extends React.Component {
   render () {
@@ -24,8 +25,9 @@ export default class Venue extends React.Component {
 							</div>
 						</div>
 						<div className="col-sm-7 col-sm-offset-0 col-md-7 col-md-offset-0 col-xs-12 col-xs-offset-0 venue_info">
-							VenueRooms
-							VenueMap
+							<div id="venue_rooms">
+							</div>
+							<VenueMap />
 							<OptionsNearby
 								venue={ 2 }
 								/>

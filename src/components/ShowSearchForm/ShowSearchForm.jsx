@@ -17,7 +17,7 @@ export default class ShowSearchForm extends React.Component {
 
   render () {
     return (
-			<div id="search_form">
+			<div id="search_form" className="row">
 				<form id="second_search_form">
 					<PersonsPicker />
 					<ReactDatePicker />

@@ -65,6 +65,14 @@ export default class SearchResults extends React.Component {
 	}
 
 	renderRoom(e){
+
+		let t = $("[name=persons]").val(),
+        dateVal = $("[name=date]").val();
+
+		let a = {
+        venue: getParams.venue
+    };
+
 		var strFrom = lang.searchFrom.toLowerCase(),
 		pre=false,
 		aft=false,
@@ -197,7 +205,7 @@ export default class SearchResults extends React.Component {
 			roomClass="hidden";
 		}
 
-		var l = e.imgUrl?e.imgUrl:"images/noimg.gif";
+		var l = e.imgUrl?e.imgUrl:"assets/images/noimg.gif";
 
 		var i = [];
 
@@ -212,39 +220,132 @@ export default class SearchResults extends React.Component {
 		//console.log(e);
 		var roomId = e.conferenceRoomId ? e.conferenceRoomId : e.id;
 
+		return (
+			<div key={`room_${roomId}`} className={`col-xs-12 ${roomClass}`}>
+				<div className="venue_room">
+					<div className="appearance" style={{backgroundImage: "url('" + l + "')"}}>
+
+					</div>
+					<div className="description">
+						<h2 className="name">
+							{ e.name }
+						</h2>
+						<div className="room_details">
+							<div className="room_data">
+								<div className="data_persons">
+									<div className="data_head">
+										 { lang.maxNo }
+									</div>
+									<div className="data_val">
+										{ e.maxSeats }
+									</div>
+								</div>
+								<div className="room_seats">
+									<div className="data_head">
+										 { lang.venueSeat }
+									</div>
+									<div className="data_val">
+										{ i.join(', ') }
+									</div>
+								</div>
+							</div>
+							<div className="room_prices">
+
+								<div className={`vroom_bookslot ${preClass}`}>
+									<div className="bookslot_description">
+										<div className="description_group">
+											<div className="description_text">
+												{ preText }
+											</div>
+											<div className="description_price">
+												{ prePrice }
+											</div>
+										</div>
+										<div className="bookslot_time">
+											{ preTime }
+										</div>
+									</div>
+									<div className="bookslot_button">
+										<a href={ preUrl } onClick={ this.bookingHandleClick }>
+											{ preBookNow }
+										</a>
+									</div>
+								</div>
+
+								<div className={`vroom_bookslot ${aftClass}`}>
+									<div className="bookslot_description">
+										<div className="description_group">
+											<div className="description_text">
+												{ aftText }
+											</div>
+											<div className="description_price">
+												{ aftPrice }
+											</div>
+										</div>
+										<div className="bookslot_time">
+											{ aftTime }
+										</div>
+									</div>
+									<div className="bookslot_button">
+										<a href={ aftUrl } onClick={ this.bookingHandleClick }>
+											{ aftBookNow }
+										</a>
+									</div>
+								</div>
+
+								<div className={`vroom_bookslot ${fullClass}`}>
+									<div className="bookslot_description">
+										<div className="description_group">
+											<div className="description_text">
+												{ fullText }
+											</div>
+											<div className="description_price">
+												{ fullPrice }
+											</div>
+										</div>
+										<div className="bookslot_time">
+											{ fullTime }
+										</div>
+									</div>
+									<div className="bookslot_button">
+										<a href={ fullUrl } onClick={ this.bookingHandleClick }>
+											{ fullBookNow }
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+
 	}
 
   render () {
 
 		let rooms = [];
 		let t = $("[name=persons]").val(),
-            dateVal = $("[name=date]").val();
+        dateVal = $("[name=date]").val();
     rooms = this.plantToArray(venueRooms);
-    console.log(this.props.preNoon);
+    //console.log(this.props.preNoon);
 
 		if ((!this.props.preNoon.conferenceRoomAvailability && !this.props.afterNoon.conferenceRoomAvailability && dateVal) || !rooms.length){
 			return this.renderNoRooms();
 		}
 
-		var a = {
-            venue: getParams.venue
-        };
-
-
-
     return (
-			<div id="venue_rooms">
 				<div className="venue_rooms v_info">
 					<div className="heading">
 						<div className="pull-right">{ lang.exVAT }</div>
 						<h2 className="name">{ lang.venueAvailableRooms }</h2>
+						<div dangerouslySetInnerHTML={{__html: lang.addonsNext}}></div>
 					</div>
-					<div>Deng!</div>
 					<div className="row">
-						{ rooms.map(this.renderRoom) }
+						{ rooms.map(this.renderRoom.bind(this)) }
 					</div>
 				</div>
-			</div>
     );
   }
 }

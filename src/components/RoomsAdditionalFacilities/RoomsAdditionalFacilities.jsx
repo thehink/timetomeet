@@ -8,11 +8,11 @@ export default class RoomsAdditionalFacilities extends React.Component {
 
 	componentDidMount(){
 		$(".venue_about .btn").click(function() {
-        totalHeight = 0
-        $el = $(this);
-        $p  = $el.parent();
-        $up = $p.parent();
-        $ps = $up.find("div.v_info");
+        let totalHeight = 0,
+						$el = $(this),
+						$p  = $el.parent(),
+						$up = $p.parent(),
+						$ps = $up.find("div.v_info");
 
         // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
         $ps.each(function() {
