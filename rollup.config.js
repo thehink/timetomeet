@@ -7,24 +7,39 @@ import globals from 'rollup-plugin-node-globals';
 import replace from 'rollup-plugin-replace';
 import json from 'rollup-plugin-json';
 import css from 'rollup-plugin-css-only';
-import image from 'rollup-plugin-image';
+//import image from 'rollup-plugin-image';
+import { keys }    from 'lodash';
+import url from "rollup-plugin-url";
+
+const urlPlugin = url({
+  limit: 10 * 1024, // inline files < 10k, copy files > 10k
+});
+
+const EXTERNALS = {
+  'react': 'React',
+  'react-dom': 'ReactDOM',
+}
 
 export default {
   entry: 'src/index.js',
   dest: 'public/assets/scripts/timetomeet.js',
   format: 'iife',
   sourceMap: true,
+	external: keys(EXTERNALS),
+  globals: EXTERNALS,
   plugins: [
     json(),
-    image(),
     css({ output: 'public/assets/styles/timetomeet.css' }),
+		urlPlugin,
     babel({
       exclude: 'node_modules/**'
     }),
     resolve({
       jsnext: true,
       browser: true,
-      main: true
+      main: true,
+			ignoreGlobal: false,
+			skip: keys(EXTERNALS),
     }),
     commonjs(),
     globals(),
