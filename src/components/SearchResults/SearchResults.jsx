@@ -64,7 +64,7 @@ export default class SearchResults extends React.Component {
 		);
 	}
 
-	renderRoom(room){
+	renderRoom(e){
 		var strFrom = lang.searchFrom.toLowerCase(),
 		pre=false,
 		aft=false,
@@ -83,15 +83,16 @@ export default class SearchResults extends React.Component {
 		preText=!dateVal?lang.venuePreNoon+" "+strFrom:lang.venuePreNoon,
 		aftText=!dateVal?lang.venueAfterNoon+" "+strFrom:lang.venueAfterNoon,
 		fullText=!dateVal?lang.venueFullDay+" "+strFrom:lang.venueFullDay,
-		prePrice=Math.round(room.preNoonPrice) + " kr",
-		aftPrice=Math.round(room.afterNoonPrice) + " kr",
-		fullPrice=Math.round(room.fullDayPrice) + " kr",
-		fullStart=room.preNoonAvailabilityHourStart,
-		fullEnd=room.preNoonAvailabilityHourEnd,
+		prePrice=Math.round(e.preNoonPrice) + " kr",
+		aftPrice=Math.round(e.afterNoonPrice) + " kr",
+		fullPrice=Math.round(e.fullDayPrice) + " kr",
+		fullStart=e.preNoonAvailabilityHourStart,
+		fullEnd=e.preNoonAvailabilityHourEnd,
 		fullPriceTmp="",
-		preTime=room.preNoonAvailabilityHourStart.slice(0, -3)+"-"+room.preNoonAvailabilityHourEnd.slice(0, -3),
-		aftTime=room.afterNoonAvailabilityHourStart.slice(0, -3)+"-"+room.afterNoonAvailabilityHourEnd.slice(0, -3),
-		fullTime=room.preNoonAvailabilityHourStart.slice(0, -3)+"-"+room.afterNoonAvailabilityHourEnd.slice(0, -3);
+		preTime=e.preNoonAvailabilityHourStart.slice(0, -3)+"-"+e.preNoonAvailabilityHourEnd.slice(0, -3),
+		aftTime=e.afterNoonAvailabilityHourStart.slice(0, -3)+"-"+e.afterNoonAvailabilityHourEnd.slice(0, -3),
+		fullTime=e.preNoonAvailabilityHourStart.slice(0, -3)+"-"+e.afterNoonAvailabilityHourEnd.slice(0, -3);
+
 
 		if(dateVal){
 			preClass="disabled",
@@ -102,6 +103,114 @@ export default class SearchResults extends React.Component {
 		if($("[name=persons]").val()>e.maxSeats){
 			roomClass="hidden";
 		}
+
+
+		if(this.props.preNoon.conferenceRoomAvailability){
+
+			this.props.preNoon.conferenceRoomAvailability.map(function(r) {
+				if(r.conferenceRoom==e.id){
+
+					pre=r.id;
+					a.from = r.hoursAvailableFrom.slice(0, -3);
+					a.to = r.hoursAvailableTo.slice(0, -3);
+					a.id = r.block;
+					a.price = Math.round(r.preNoonPrice);
+					a.room = r.conferenceRoom;
+					a.booking = r.id;
+					a.date = r.start;
+					a.persons = $("[name=persons]").val();
+
+					var url = "";
+					for (var v in a) url += "&" + v + "=" + a[v];
+
+					preUrl= options.bookingPageUrl + "?" + url.substring(1);
+					preClass="";
+
+					prePrice=a.price + " kr"
+
+					fullPriceTmp= Math.round(r.fullDayPrice);
+					fullStart=a.from;
+					full=r.block;
+
+				}
+			})
+		}
+
+		// Afternoon
+		if(this.props.afterNoon.conferenceRoomAvailability){
+			this.props.afterNoon.conferenceRoomAvailability.map(function(r) {
+				if(r.conferenceRoom==e.id){
+					aft=r.id;
+
+					a.from = r.hoursAvailableFrom.slice(0, -3);
+					a.to = r.hoursAvailableTo.slice(0, -3);
+					a.id = r.block;
+					a.price = Math.round(r.afterNoonPrice);
+					a.room = r.conferenceRoom;
+					a.booking = r.id;
+					a.date = r.start;
+					a.persons = $("[name=persons]").val();
+
+					var url = "";
+					for (var v in a) url += "&" + v + "=" + a[v];
+
+					aftUrl= options.bookingPageUrl + "?" + url.substring(1);
+					aftClass="";
+
+					aftPrice=a.price + " kr"
+
+
+					fullEnd=a.to;
+
+				}
+			})
+		}
+
+
+		// Full day
+		if(pre && aft){
+			a.from = fullStart;
+			a.to = fullEnd;
+			a.id = full;
+			a.price = fullPriceTmp;
+			a.booking = pre+","+aft;
+			a.persons = $("[name=persons]").val();
+
+			var url = "";
+			for (var v in a) url += "&" + v + "=" + a[v];
+
+			fullUrl= options.bookingPageUrl + "?" + url.substring(1);
+			fullClass="";
+			fullPrice= a.price + " kr";
+
+			fullBookNow=lang.bookNow;
+
+		}
+
+		if(pre || aft) roomClass="", generalClass="hidden-div";
+
+		aftBookNow= dateVal && !aft ? lang.venueBooked:lang.bookNow;
+		preBookNow= dateVal && !pre ? lang.venueBooked:lang.bookNow;
+		fullBookNow= dateVal && !aft && !pre ? lang.venueBooked:lang.bookNow;
+
+		if($("[name=persons]").val()>e.maxSeats || (dateVal && (!pre && !aft))){
+			roomClass="hidden";
+		}
+
+		var l = e.imgUrl?e.imgUrl:"images/noimg.gif";
+
+		var i = [];
+
+		for (var r in e.defaultSeating)
+		i.push(e.defaultSeating[r].name);
+
+
+
+		var u = e.description ? e.description : e.conferenceRoomDescription;
+
+		var genText = lang.price + " " + Math.round(e.fullDayPrice) + " kr";
+		//console.log(e);
+		var roomId = e.conferenceRoomId ? e.conferenceRoomId : e.id;
 
 	}
 
@@ -120,6 +229,8 @@ export default class SearchResults extends React.Component {
 		var a = {
             venue: getParams.venue
         };
+
+
 
     return (
 			<div id="venue_rooms">

@@ -15,20 +15,11 @@ export default class Facilities extends React.Component {
 			<div className="venue_facilities v_info" id="facilities">
 				<div>
 					<div className="heading">
-						<p className="name">{ this.props.name }</p>
+						<p className="name">{ lang.venueFacilities }</p>
 					</div>
-					<RoomsAdditionalSeatings
-						name = { this.props.seatingsName }
-						tags = { this.props.seats }
-						/>
-					<RoomsAdditionalFacilities
-						name = { this.props.technologiesName }
-						tags = { this.props.technologies }
-						/>
-					<FacilityBeverage
-						name = { this.props.foodsName }
-						tags = { this.props.foods }
-						/>
+					<RoomsAdditionalSeatings />
+					<RoomsAdditionalFacilities />
+					<FacilityBeverage />
 				</div>
 			</div>
     );
