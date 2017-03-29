@@ -1,16 +1,16 @@
 import React from 'react';
 
-import './styles/style.css';
-import './styles/venue.css';
-import './styles/content.css';
-import './styles/default.css';
-import './styles/header.css';
-import './styles/footer.css';
-import './styles/search.css';
-import './styles/chosen.css';
-import './styles/additions.css';
-import './styles/booking.css';
-import './styles/widgets.css';
+import './styles/style.scss';
+import './styles/venue.scss';
+import './styles/content.scss';
+import './styles/default.scss';
+import './styles/header.scss';
+import './styles/footer.scss';
+import './styles/search.scss';
+import './styles/chosen.scss';
+import './styles/additions.scss';
+import './styles/booking.scss';
+import './styles/widgets.scss';
 
 import Header from './components/Header';
 import Venue from './components/Venue';
