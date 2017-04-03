@@ -1,6 +1,8 @@
 import React from 'react'
 
 import VenueImage from '../VenueImage';
+import Facilities from '../Facilities';
+import VenueFilters from '../VenueFilters';
 
 export default class Venue extends React.Component {
   render () {
