@@ -6,7 +6,7 @@ export default class VenueImage extends React.Component {
   render () {
     return (
       <div className="venue-image">
-
+				VenueImage
       </div>
     );
   }

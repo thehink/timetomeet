@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import VenueImage from '../VenueImage';
 import Facilities from '../Facilities';
