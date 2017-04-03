@@ -9,10 +9,10 @@ export default class Venue extends React.Component {
     return (
       <div className="venue container">
 				<div className="row">
-					<div className="col-8">
+					<div className="col-md-8">
 						<VenueImage />
 					</div>
-					<div className="col-4">
+					<div className="col-md-4">
 						<Facilities />
 					</div>
 					<VenueFilters />
