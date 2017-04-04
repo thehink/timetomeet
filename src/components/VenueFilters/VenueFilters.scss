@@ -9,8 +9,6 @@
 	background: rgba(27,27,27,.8);
 	color: #FFF;
 	z-index: 2;
-
-
 	padding: 11px 30px;
 
 	h1.name{
@@ -27,5 +25,18 @@
 		font-family: Montserrat-Light;
 		font-size: 13px;
 		color: #FFF;
+	}
+
+	.filter-form{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		height: 100%;
+
+		input, div{
+			height: 45px;
+			width: 100%;
+			margin-left: 40px;
+		}
 	}
 }
