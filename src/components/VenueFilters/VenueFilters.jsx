@@ -6,7 +6,7 @@ export default class VenueFilters extends React.Component {
   render () {
     return (
       <div className="venue-filters">
-				VenueFilters
+				VenueFilters :O
       </div>
     );
   }
