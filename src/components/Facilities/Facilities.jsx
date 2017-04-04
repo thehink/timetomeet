@@ -21,9 +21,26 @@ export default class Facilities extends React.Component
 
 					<hr />
 
-					<div className="col-md-12"><h2>Utrustning</h2></div>
+					<div className="col-md-12">
 
-					<div className="col-md-12"><h2>Mat & Dryck</h2></div>
+						<h2>Utrustning</h2>
+
+						<p>Anteckningsmaterial Blädderblock Internet (Wi Fi) ProjektorProjektorduk Whiteboard </p>
+
+					</div>
+
+					<hr />
+
+					<div className="col-md-12">
+
+						<h2>Mat & Dryck</h2>
+
+						<p>Eftermiddagsfika, inkl. kaffe/te (standard)
+							Enbart kaffe/te
+							Förmiddagsfika, inkl. kaffe/te (standard)
+							FruktLunch i restaurang/annan (standard)</p>
+
+					</div>
 
 				</div>
 
