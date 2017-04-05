@@ -3,7 +3,26 @@ import React from 'react'
 import "./Facilities.scss";
 export default class Facilities extends React.Component
 {
+
+	state = {
+			seating: venueData.seats,
+			gear: venueData.technologies,
+			food: venueData.plantFoodBeverages
+
+		}
+
+
+
+		renderItem (item) {
+			return (
+				<li key={item.id}>{item.name}</li>
+			)
+		}
+
   render () {
+
+
+
     return (
 			<div className="facilities">
 
@@ -15,7 +34,11 @@ export default class Facilities extends React.Component
 
 						<h2>Sittningsalternativ</h2>
 
-						<p>Bio  Skolsittning  Styrelsesittning  U-Bord</p>
+						<ul>
+
+							{this.state.seating.map(this.renderItem)}
+
+						</ul>
 
 					</div>
 
@@ -25,7 +48,11 @@ export default class Facilities extends React.Component
 
 						<h2>Utrustning</h2>
 
-						<p>Anteckningsmaterial Blädderblock Internet (Wi Fi) ProjektorProjektorduk Whiteboard </p>
+							<ul>
+
+								{this.state.gear.map(this.renderItem)}
+
+							</ul>
 
 					</div>
 
@@ -35,10 +62,11 @@ export default class Facilities extends React.Component
 
 						<h2>Mat & Dryck</h2>
 
-						<p>Eftermiddagsfika, inkl. kaffe/te (standard)
-							Enbart kaffe/te
-							Förmiddagsfika, inkl. kaffe/te (standard)
-							FruktLunch i restaurang/annan (standard)</p>
+							<ul>
+
+								{this.state.food.map(this.renderItem)}
+
+							</ul>
 
 					</div>
 
