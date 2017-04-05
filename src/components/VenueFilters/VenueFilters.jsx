@@ -6,6 +6,14 @@ export default class VenueFilters extends React.Component {
 
 	componentDidMount(){
 		$(".venue-filters").sticky();
+
+		$("#date").datepicker({
+				 showOtherMonths: !0,
+				 selectOtherMonths: !0,
+				 dateFormat: "d M yy",
+				 firstDay: 1,
+				 minDate: 0
+		 })
 	}
 
 	render () {
@@ -24,7 +32,7 @@ export default class VenueFilters extends React.Component {
 						<div className="col-xs-8 col-md-8">
 							<div className="filter-form date">
 								<input
-									className="form-control"
+									className="form-control persons"
 									tabIndex = "1"
 									type = "number"
 									min = {0}
@@ -35,7 +43,7 @@ export default class VenueFilters extends React.Component {
 									placeholder = { lang.searchPersons }
 									/>
 								<input
-									className="form-control"
+									className="form-control date"
 									readOnly = "true"
 									tabIndex = "2"
 									type = "text"
