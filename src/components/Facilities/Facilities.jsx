@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "./Facilities.scss";
+
 export default class Facilities extends React.Component
 {
 
