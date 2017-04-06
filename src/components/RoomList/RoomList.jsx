@@ -21,7 +21,7 @@ export default class RoomList extends React.Component{
 
 	render(){
 		return (
-			<div className="row room-cards">
+			<div className="col-sm-12 col-md-12 col-lg-12 room-cards">
 				{ this.state.rooms.map(this.renderItem) }
 			</div>
 		);
