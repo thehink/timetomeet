@@ -12,10 +12,37 @@
 		margin-top: 28px !important;
 
 	}
+	h5 {
+		font-family: 'montserrat-regular';
+		font-size: 14px;
+		color: #4A4A4A;
+		margin: 12px 0 0;
+	}
 	h6 {
-		font-family: 'montserrat-light';
+		font-family: 'Montserrat';
+		font-weight: 200;
 		font-size: 13px;
 		color: #4A4A4A;
 		margin-bottom: 0;
 	}
+	li {
+		display: inline-block;
+		margin-right: 30px;
+		font-family: 'Montserrat';
+		font-weight: 200;
+		font-size: 14px;
+		color: #4A4A4A;
+		margin-bottom: 10px;
+	}
+	hr {
+		border: none;
+		height: 1px;
+		background: #C7C7C7;
+		margin-bottom: 14px;
+	}
+
+}
+.tech-list {
+	height: 50px;
+	overflow: scroll;
 }
