@@ -1,3 +1,21 @@
 .room-info {
-	background: none;
+	h1 {
+		font-family: "montserrat-bold";
+		font-size: 24px;
+		color: #4A4A4A;
+		margin-bottom: 0;
+	}
+	h2 {
+		font-family: 'montserrat-light';
+		font-size: 20px;
+		color: #4A4A4A;
+		margin-top: 28px !important;
+
+	}
+	h6 {
+		font-family: 'montserrat-light';
+		font-size: 13px;
+		color: #4A4A4A;
+		margin-bottom: 0;
+	}
 }

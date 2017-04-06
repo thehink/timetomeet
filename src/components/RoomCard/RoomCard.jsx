@@ -9,14 +9,15 @@ import "./RoomCard.scss";
 export default class RoomCard extends React.Component {
 
 	render() {
+
 		return (
 
 			<div className="row room-card">
 				<div className="col-md-4">
-					<RoomImage />
+					<RoomImage image={this.props.room.imgUrl} />
 				</div>
 				<div className="col-md-4">
-					<RoomInfo />
+					<RoomInfo info={this.props.room} />
 				</div>
 				<div className="col-md-4">
 					<RoomSelect />
