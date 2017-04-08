@@ -15,7 +15,7 @@ export default class RoomList extends React.Component{
 		return (
 			<RoomCard
 				room = { room }
-			/>
+				/>
 		)
 	}
 

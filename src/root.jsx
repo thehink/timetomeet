@@ -22,20 +22,20 @@ import Footer from './components/Footer';
 
 export default class Root extends React.Component {
 
-  state = {
+	state = {
 
-  }
+	}
 
-  render () {
-    return (
-      <app>
-        <Header />
-        <div className="content">
-          <Venue />
-          <Partners />
-        </div>
-        <Footer />
-      </app>
-    );
-  }
+	render () {
+		return (
+			<app>
+				<Header />
+				<div className="content">
+					<Venue />
+					<Partners />
+				</div>
+				<Footer />
+			</app>
+		);
+	}
 }

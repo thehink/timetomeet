@@ -8,12 +8,12 @@ export default class VenueFilters extends React.Component {
 		$(".venue-filters").sticky();
 
 		$("#date").datepicker({
-				 showOtherMonths: !0,
-				 selectOtherMonths: !0,
-				 dateFormat: "d M yy",
-				 firstDay: 1,
-				 minDate: 0
-		 })
+			showOtherMonths: !0,
+			selectOtherMonths: !0,
+			dateFormat: "d M yy",
+			firstDay: 1,
+			minDate: 0
+		})
 	}
 
 	render () {

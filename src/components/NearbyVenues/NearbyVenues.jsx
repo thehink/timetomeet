@@ -41,15 +41,15 @@ export default class NearbyVenues extends React.Component {
 		}
 	}
 
-  render () {
-    return (
-      <div className="nearby-venues">
+	render () {
+		return (
+			<div className="nearby-venues">
 				<h2>{ lang.venueOptionsNearby }</h2>
 				{ this.renderLoader() }
 				<div className="nearby-cards row">
 					{ this.state.venues.map(this.renderNearbyCard) }
 				</div>
-      </div>
-    );
-  }
+			</div>
+		);
+	}
 }

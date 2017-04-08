@@ -40,14 +40,13 @@ export default class Select extends React.Component {
 			<div className={`simple-select dropdown ${this.props.className}`}>
 				<input type="hidden" name={ this.props.name } value={ this.state.value } />
 				<button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-			    { this.state.display }
-			    <span className="glyphicon glyphicon-menu-down"></span>
-			  </button>
+					{ this.state.display }
+					<span className="glyphicon glyphicon-menu-down"></span>
+				</button>
 				<ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
 					{ children }
-			  </ul>
+				</ul>
 			</div>
 		)
 	}
-
 }

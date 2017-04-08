@@ -3,7 +3,7 @@ import React from 'react';
 import './NearbyCard.scss';
 
 export default class NearbyCard extends React.Component {
-  render () {
+	render () {
 
 		const {
 			distance,
@@ -16,7 +16,7 @@ export default class NearbyCard extends React.Component {
 			plantId
 		} = this.props.venue;
 
-    return (
+		return (
 			<div className="nearby-card">
 				<img className="image" src={images[0].image} />
 
@@ -48,6 +48,6 @@ export default class NearbyCard extends React.Component {
 
 				<a href="#" className="show-room-button btn btn-success">Visa Rum</a>
 			</div>
-    );
-  }
+		);
+	}
 }

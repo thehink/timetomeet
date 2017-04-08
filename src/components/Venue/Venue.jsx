@@ -11,9 +11,9 @@ import NearbyVenues from '../NearbyVenues';
 import './Venue.scss';
 
 export default class Venue extends React.Component {
-  render () {
-    return (
-      <div className="venue container-fluid">
+	render () {
+		return (
+			<div className="venue container-fluid">
 
 				<div className="row">
 					<div className="col-xs-12 col-md-8 col-lg-9">
@@ -44,7 +44,7 @@ export default class Venue extends React.Component {
 					<NearbyVenues />
 				</div>
 
-      </div>
-    );
-  }
+			</div>
+		);
+	}
 }
