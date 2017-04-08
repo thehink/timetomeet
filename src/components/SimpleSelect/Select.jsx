@@ -14,8 +14,8 @@ export default class Select extends React.Component {
 		super(props);
 
 		if(this.props.children.length > 0){
-			this.state.value = this.props.children[0].props.value;
-			this.state.display = this.props.children[0].props.children;
+			this.state.value = this.props.children[this.state.selected].props.value;
+			this.state.display = this.props.children[this.state.selected].props.children;
 		}
 	}
 
