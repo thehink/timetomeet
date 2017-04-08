@@ -20,7 +20,6 @@ export default class Select extends React.Component {
 	}
 
 	onItemClick(selected, props){
-		console.log(this, selected, props);
 		this.setState({
 			selected: selected,
 			value: props.value,
