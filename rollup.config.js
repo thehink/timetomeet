@@ -6,8 +6,6 @@ import resolve from 'rollup-plugin-node-resolve';
 import globals from 'rollup-plugin-node-globals';
 import replace from 'rollup-plugin-replace';
 import json from 'rollup-plugin-json';
-import css from 'rollup-plugin-css-only';
-//import image from 'rollup-plugin-image';
 import { keys }    from 'lodash';
 import url from "rollup-plugin-url";
 import sass from 'rollup-plugin-sass';
