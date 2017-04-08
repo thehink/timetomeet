@@ -1,0 +1,21 @@
+.simple-select{
+	height: auto !important;
+
+	button{
+		border: 1px solid #E5E5E5;
+		color: #4A4A4A;
+		font-size: 18px;
+		height: 64px;
+	}
+
+	.dropdown-menu{
+		a{
+			padding: 15px 35px;
+			text-decoration: none;
+		}
+
+		li.selected a{
+			background: #EEE;
+		}
+	}
+}

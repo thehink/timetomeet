@@ -1,5 +1,7 @@
 import React from 'React';
 
+import './SimpleSelect.scss';
+
 export default class Select extends React.Component {
 
 	state = {
@@ -36,7 +38,7 @@ export default class Select extends React.Component {
 		})
 
 		return (
-			<div className="dropdown">
+			<div className={`simple-select dropdown ${this.props.className}`}>
 				<input type="hidden" name={ this.props.name } value={ this.state.value } />
 				<button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			    { this.state.display }

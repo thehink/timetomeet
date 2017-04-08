@@ -9,14 +9,16 @@ export default class RoomSelect extends React.Component {
 	render() {
 		return (
 			<div className="room-select">
-				<Select name="time_period" selected={ 1 }>
-					<Option value="0">Förmiddag från 8:00 - 12:00</Option>
-					<Option value="1">Eftermiddag från 12:00 - 16:00</Option>
-					<Option value="2">Heldag från 8:00 - 16:00</Option>
+				<Select className="room-select_dropdown" name="time_period" selected={ 1 }>
+					<Option value="0">Förmiddag från <small>8:00 - 12:00</small></Option>
+					<Option value="1">Eftermiddag från <small>12:00 - 16:00</small></Option>
+					<Option value="2">Heldag från <small>8:00 - 16:00</small></Option>
 				</Select>
 
-				<h3 className="price">3 600 kr</h3>
-				<a className="btn btn-success">Gå till bokning</a>
+				<div className="booking-wrapper">
+					<h3 className="price">3 600 kr</h3>
+					<a className="booking-button btn btn-success">Gå till bokning</a>
+				</div>
 			</div>
 		)
 	}
