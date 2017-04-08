@@ -17,7 +17,7 @@ export default class RoomSelect extends React.Component {
 
 				<div className="booking-wrapper">
 					<h3 className="price">3 600 kr</h3>
-					<a className="booking-button btn btn-success">Gå till bokning</a>
+					<a className="booking-button btn btn-success">Boka</a>
 				</div>
 			</div>
 		)
