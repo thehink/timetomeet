@@ -1,4 +1,6 @@
-.icon{
+.icon, .form-icon{
+	background-repeat: no-repeat;
+
 	&.chair{
 		background-image: inline('./src/icons/chair.svg');
 	}
@@ -29,4 +31,8 @@
 	&.wifi{
 		background-image: inline('./src/icons/wifi.svg');
 	}
+}
+
+.form-icon{
+	padding-left: 29px;
 }

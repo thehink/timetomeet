@@ -22,17 +22,17 @@ export default class VenueFilters extends React.Component {
 				<div className="venue-filters">
 					<div className="row">
 
-						<div className="col-xs-4 col-md-4">
+						<div className="name-wrapper col-xs-4 col-md-4">
 							<h1 className="name">{ venueData.plantName }</h1>
 							<p className="place">
 								{`${venueAddress.street} ${venueAddress.city.name}`}
 							</p>
 						</div>
 
-						<div className="col-xs-8 col-md-8">
+						<div className="col col-xs-8 col-md-8">
 							<div className="filter-form date">
 								<input
-									className="form-control persons"
+									className="form-control form-icon person"
 									tabIndex = "1"
 									type = "number"
 									min = {0}
@@ -43,7 +43,7 @@ export default class VenueFilters extends React.Component {
 									placeholder = { lang.searchPersons }
 									/>
 								<input
-									className="form-control date"
+									className="form-control form-icon calender"
 									readOnly = "true"
 									tabIndex = "2"
 									type = "text"

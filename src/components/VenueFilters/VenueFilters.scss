@@ -9,10 +9,22 @@
 	background: rgba(27,27,27,.8);
 	color: #FFF;
 	z-index: 2;
-	padding: 11px 30px;
+	padding: 11px 14px 11px 14px;
+
+	.name-wrapper{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
 
 	& > .row{
 		display: flex;
+
+		.col{
+			margin: 0;
+			padding: 0;
+		}
+
 	}
 
 	h1.name{
@@ -38,13 +50,18 @@
 		align-items: center;
 		height: 100%;
 
-		input, div{
-			height: 45px;
+		input{
+			font-family: Montserrat-Light;
+			font-size: 15px;
+			color: #9B9B9B;
+			letter-spacing: 0;
+			height: 42px;
 			width: 100%;
-			margin-left: 40px;
+			max-width: 211px;
+			margin-left: 20px;
 		}
 
-		input.date{
+		input.calender{
 			cursor: pointer;
 		}
 	}
