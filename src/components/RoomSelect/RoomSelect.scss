@@ -22,18 +22,12 @@
 .room-select_dropdown{
 	height: auto !important;
 
-	small{
-		color: #9B9B9B;
-		margin-left: 10px;
-	}
-
 	button{
 		width: 100%;
+	}
 
-		.caret{
-			position: absolute;
-			top: 50%;
-			right: 10px;
-		}
+	small{
+		color: #9B9B9B;
+		margin: 0 16px 0 13px;
 	}
 }
