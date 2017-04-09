@@ -1,5 +1,6 @@
 .icon, .form-icon{
 	background-repeat: no-repeat;
+	background-position: center;
 
 	&.chair{
 		background-image: inline('./src/icons/chair.svg');
@@ -34,5 +35,7 @@
 }
 
 .form-icon{
-	padding-left: 29px;
+	padding-left: 35px;
+	background-position: left;
+	background-size: 35px 24px;
 }
