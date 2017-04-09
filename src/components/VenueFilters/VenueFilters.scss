@@ -59,6 +59,17 @@
 			width: 100%;
 			max-width: 211px;
 			margin-left: 20px;
+
+			&:focus{
+				border-color: inherit;
+			  -webkit-box-shadow: none;
+			  box-shadow: none;
+				outline: none;
+			}
+		}
+
+		input.error{
+			border: 1px solid red;
 		}
 
 		input.calender{
