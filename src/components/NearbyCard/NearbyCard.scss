@@ -1,3 +1,7 @@
+.nearby-venues .nearby-card > h2{
+	margin: 11px 0 22px 0 !important;
+}
+
 .nearby-card{
 	padding: 17px;
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.13);
@@ -12,9 +16,10 @@
 		color: #FFFFFF;
 		letter-spacing: 0;
 		width: 100%;
+		margin-top: 30px;
 	}
 
-	h2{
+	& > h2{
 		font-family: Montserrat-Bold;
 		font-size: 24px;
 		color: #4A4A4A;
@@ -30,7 +35,7 @@
 
 .nearby-card > .desc{
 	display: flex;
-	margin: 25px 0;
+	margin: 6px 0;
 
 	.icon{
 		width: 16px;
