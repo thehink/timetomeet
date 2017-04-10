@@ -6,7 +6,8 @@
 	height: 338px;
 	margin: 30px auto !important;
 	padding: 18px;
-}
-.room-card div:first-child {
-	height: 100%;
+		div:first-of-type {
+			height: 100%;
+		}
+
 }
