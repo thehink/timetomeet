@@ -43,8 +43,7 @@
 
 }
 .tech-list {
-	height: 50px;
-	overflow: scroll;
+
 }
 .facility-icon {
 	background-position: center;
@@ -56,9 +55,10 @@
 
 .projector {
 	stroke: black;
-	height: 10px;
+	height: 12px;
 	width: auto;
 	fill: none;
+	margin-right: 5px;
 	.cls-3 {
 		fill: white;
 	}

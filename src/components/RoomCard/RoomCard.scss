@@ -1,10 +1,8 @@
 .room-card {
-	display: flex;
 	background: #FFFFFF;
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.13);
 	border-radius: 5px;
-	width: 1140px;
-	height: 338px;
+	max-width: 1140px;
 	margin: 30px auto !important;
 	padding: 18px;
 		div:first-of-type {

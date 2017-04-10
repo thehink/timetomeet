@@ -1,11 +1,5 @@
 
-
-// export default function bulle() {
-// 	return "Hej";
-// }
-//
-
-		 export default class Projector extends React.Component {
+		 export const Projector = class Projector extends React.Component {
 
 			 render() {
 				 return (
@@ -26,3 +20,13 @@
 				 )
 			}
 		}
+
+
+
+
+
+
+
+
+		//
+		// const wifi = <svg id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.56 112.8"><defs><style>.cls-1{fill:#fff;}.cls-1,.cls-2{stroke:#4b4a4b;stroke-miterlimit:10;}.cls-2{fill:none;}</style></defs><title>wifi</title><path class="cls-1" d="M316.7,340.3a15.9,15.9,0,0,1-1.6,6.9,15.45,15.45,0,0,1-3.8,5,16,16,0,0,1-21.2,0,17,17,0,0,1-3.8-5,16,16,0,1,1,30.4-6.9Z" transform="translate(-241.02 -243.9)"/><path class="cls-2" d="M276.3,314.5a30.05,30.05,0,0,1,48.2,0" transform="translate(-241.02 -243.9)"/><path class="cls-2" d="M258.5,302.5a45.89,45.89,0,0,1,84.6,0" transform="translate(-241.02 -243.9)"/><path class="cls-2" d="M241.5,288.5a61.92,61.92,0,0,1,118.6,0" transform="translate(-241.02 -243.9)"/></svg>

@@ -13,13 +13,13 @@ export default class RoomCard extends React.Component {
 		return (
 
 			<div className="row room-card">
-				<div className="col-md-4">
+				<div className="col-md-4 col-sm-6 col-xs-12">
 					<RoomImage image={this.props.room.imgUrl} />
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-5 col-sm-6 col-xs-12">
 					<RoomInfo info={this.props.room} />
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-3 col-sm-12 col-xs-12">
 					<RoomSelect room={ this.props.room } />
 				</div>
 			</div>
