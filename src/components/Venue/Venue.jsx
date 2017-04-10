@@ -16,11 +16,11 @@ export default class Venue extends React.Component {
 			<div className="venue container-fluid">
 
 				<div className="row">
-					<div className="col-xs-12 col-md-8 col-lg-9">
+					<div className="nm col-xs-12 col-md-8 col-lg-9">
 						<VenueImage />
 						<VenueFilters />
 					</div>
-					<div className="col-xs-12 col-md-4 col-lg-3">
+					<div className="nm col-xs-12 col-md-4 col-lg-3">
 						<Facilities />
 					</div>
 				</div>
@@ -30,10 +30,10 @@ export default class Venue extends React.Component {
 				</div>
 
 				<div className="row venue-info">
-					<div className="col-md-6">
+					<div className="col col-md-5 col-xs-12">
 						<VenueDescription />
 					</div>
-					<div className="col-md-6">
+					<div className="col col-md-7 col-xs-12">
 						<VenueMap />
 					</div>
 				</div>

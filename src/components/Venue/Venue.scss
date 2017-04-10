@@ -9,7 +9,7 @@
 	display: flex;
 	flex-wrap: wrap;
 
-	& > div{
+	& > div.nm{
 		margin-left: 0;
 		margin-right: 0;
 		padding-left: 0;
@@ -19,5 +19,5 @@
 
 .row.venue-info{
 	max-width: 1142px;
-	margin: 0 auto;
+	margin: 101px auto 101px auto;
 }
