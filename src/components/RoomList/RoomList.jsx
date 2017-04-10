@@ -2,6 +2,8 @@ import React from 'react';
 
 import RoomCard from '../RoomCard';
 
+import './RoomList.scss';
+
 export default class RoomList extends React.Component{
 
 	state = {
