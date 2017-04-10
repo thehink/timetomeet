@@ -14,11 +14,11 @@ export default class RoomInfo extends React.Component {
 	}
 	renderFacilities(item) {
 
-		let iconUrl;
+		let icon;
 
 		switch(item.name) {
 			case "Projektor":
-			iconUrl = "assets/images/new_icons/projektor.svg";
+			icon = Projector;
 			break;
 		}
 
@@ -28,7 +28,7 @@ export default class RoomInfo extends React.Component {
 
 
 
-			 <li key={item.id}>{item.name} <div className="facility-icon" style={{backgroundImage: `url(${iconUrl}`}}></div></li>
+			 <li key={item.id}>{item.name} Projector</li>
 		)
 	}
 
@@ -42,7 +42,7 @@ export default class RoomInfo extends React.Component {
 
 			<div className="room-info">
 
-				<Projector />
+				<Projector class="projector"/>
 
 				<h1>{this.props.info.name}</h1>
 

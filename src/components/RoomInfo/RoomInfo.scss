@@ -53,3 +53,13 @@
 	width: 50px;
 	background-repeat: no-repeat;
 }
+
+.projector {
+	stroke: black;
+	height: 10px;
+	width: auto;
+	fill: none;
+	.cls-3 {
+		fill: white;
+	}
+}
