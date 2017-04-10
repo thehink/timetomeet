@@ -29,7 +29,7 @@ export default class Venue extends React.Component {
 					<RoomList />
 				</div>
 
-				<div className="row">
+				<div className="row venue-info">
 					<div className="col-md-6">
 						<VenueDescription />
 					</div>

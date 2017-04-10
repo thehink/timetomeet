@@ -39,7 +39,7 @@ export default class Facilities extends React.Component
 
 					<hr />
 
-						<h2>Utrustning <i className="icon chair" /></h2>
+						<h2>Utrustning <i className="icon projektor" /></h2>
 
 							<ul>
 
