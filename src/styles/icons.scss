@@ -1,0 +1,47 @@
+.icon, .form-icon{
+	background-repeat: no-repeat;
+	background-position: center bottom;
+
+	&.chair{
+		background-image: inline('./src/icons/chair.svg');
+	}
+	&.calender{
+		background-image: inline('./src/icons/calender.svg');
+	}
+	&.food{
+		background-image: inline('./src/icons/food.svg');
+	}
+	&.overhead{
+		background-image: inline('./src/icons/overhead.svg');
+	}
+	&.paperpen{
+		background-image: inline('./src/icons/paperpen.svg');
+	}
+	&.person{
+		background-image: inline('./src/icons/person.svg');
+	}
+	&.projektor{
+		background-image: inline('./src/icons/projektor.svg');
+	}
+	&.projektorduk{
+		background-image: inline('./src/icons/projektorduk.svg');
+	}
+	&.whiteboard{
+		background-image: inline('./src/icons/whiteboard.svg');
+	}
+	&.wifi{
+		background-image: inline('./src/icons/wifi.svg');
+	}
+}
+
+i.icon{
+	display: inline-block;
+	min-width: 16px;
+	min-height: 16px;
+}
+
+.form-icon{
+	padding-left: 35px;
+	background-position: left;
+	background-size: 35px 24px;
+}

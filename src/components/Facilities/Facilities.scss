@@ -2,21 +2,31 @@
 
 .facilities{
 	background: white;
-	padding: 48px 20px 50px;
+	padding: 34px 20px 20px 20px;
 	height: 100%;
 
+	.icon{
+		width: 31px;
+		height: 31px;
+		margin-left: 16px;
+	}
+
 	h1 {
-		 font-family: 'montserrat-semibold';
-		 font-size: 25px;
-		 color: #222222;
-		 margin-bottom: 40px;
+		font-family: Montserrat-SemiBold;
+		font-size: 29px;
+		line-height: 29px;
+		color: #222222;
+		letter-spacing: 0;
+		margin-bottom: 29px;
 	}
 
 	h2 {
-		font-family: 'montserrat-regular';
-		font-size: 23px;
-		color: #222222;
+		font-family: Montserrat-Regular;
+		font-size: 20px;
+		color: #40B436;
 		letter-spacing: 0;
+		line-height: 20px;
+		margin-bottom: 3px;
 	}
 
 	p {
@@ -29,12 +39,13 @@
 		border: none;
 		height: 1px;
 		background: #C7C7C7;
+		margin: 42px 0 27px 0;
 	}
 
 	li {
 		margin: 0 20px 0 0;
 		display: inline-block;
-		font-family: 'montserrat-light';
+		font-family: Montserrat-Light;
 		font-size: 15px;
 		color: #4A4A4A;
 		letter-spacing: 0;

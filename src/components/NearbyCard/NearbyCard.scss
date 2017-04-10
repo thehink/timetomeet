@@ -1,0 +1,64 @@
+.nearby-venues .nearby-card > h2{
+	margin: 11px 0 22px 0 !important;
+}
+
+.nearby-card{
+	padding: 17px;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.13);
+	border-radius: 5px;
+	background: #FFFFFF;
+	margin-bottom: 36px;
+
+	.btn.show-room-button{
+		padding: 12px;
+		font-family: Montserrat-Regular;
+		font-size: 15px;
+		color: #FFFFFF;
+		letter-spacing: 0;
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	& > h2{
+		font-family: Montserrat-Bold;
+		font-size: 24px;
+		color: #4A4A4A;
+		letter-spacing: 0;
+		margin: 11px 0 20px 0 !important;
+	}
+
+	.image{
+		width: 100%;
+		height: 302px;
+	}
+}
+
+.nearby-card > .desc{
+	display: flex;
+	margin: 6px 0;
+
+	.icon{
+		width: 24px;
+		height: 24px;
+		margin-right: 8px;
+		background-size: contain;
+	}
+
+	.desc-body{
+		font-family: Montserrat-Regular;
+		font-size: 14px;
+		color: #4A4A4A;
+		letter-spacing: 0;
+
+		.desc-title{
+		}
+
+		.desc-content{
+			font-family: Montserrat-Light;
+			font-size: 14px;
+			color: #999;
+			letter-spacing: 0;
+			line-height: 18px;
+		}
+	}
+}

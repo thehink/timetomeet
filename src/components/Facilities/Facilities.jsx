@@ -29,7 +29,7 @@ export default class Facilities extends React.Component
 
 					<h1>FACILITETER</h1>
 
-						<h2>Sittningsalternativ</h2>
+						<h2>Sittningsalternativ <i className="icon chair" /></h2>
 
 						<ul>
 
@@ -39,7 +39,7 @@ export default class Facilities extends React.Component
 
 					<hr />
 
-						<h2>Utrustning</h2>
+						<h2>Utrustning <i className="icon chair" /></h2>
 
 							<ul>
 
@@ -49,7 +49,7 @@ export default class Facilities extends React.Component
 
 					<hr />
 
-						<h2>Mat & Dryck</h2>
+						<h2>Mat & Dryck <i className="icon food" /></h2>
 
 							<ul>
 
