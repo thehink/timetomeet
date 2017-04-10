@@ -20,7 +20,7 @@ export default class RoomCard extends React.Component {
 					<RoomInfo info={this.props.room} />
 				</div>
 				<div className="col-md-4">
-					<RoomSelect />
+					<RoomSelect room={ this.props.room } />
 				</div>
 			</div>
 		)

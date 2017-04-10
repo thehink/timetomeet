@@ -24,7 +24,12 @@ export default class Select extends React.Component {
 			selected: selected,
 			value: props.value,
 			display: props.children
-		})
+		});
+
+		if(this.props.onChange){
+			this.props.onChange(selected, props.value);
+		}
+
 		event.preventDefault();
 	}
 
