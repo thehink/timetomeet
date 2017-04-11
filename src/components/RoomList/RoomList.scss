@@ -1,3 +1,29 @@
 .room-cards{
 	background: #F8F8F8;
 }
+
+.room-list-heading{
+	max-width: 1144px;
+	margin: 70px auto;
+
+	.name{
+		font-family: Montserrat-SemiBold;
+		font-size: 25px;
+		color: #272727;
+		letter-spacing: 0;
+		line-height: 30px;
+	}
+
+	.options{
+		font-family: Montserrat-Light;
+		font-size: 20px;
+		color: #000000;
+		letter-spacing: 0;
+		line-height: 30px;
+	}
+
+	i{
+		color: #40B436;
+		margin-left: 20px;
+	}
+}

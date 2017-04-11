@@ -17,21 +17,21 @@ export default class RoomList extends React.Component{
 	componentDidMount(){
 		let _this = this;
 		$("[name=date]").change(function() {
-				if($(this).val()) $(this).removeClass('error');
-				if($("[name=date]").val() && $("[name=persons]").val()) $(".venue .venue_filters .ok").hide();
-				$("[name=date]").val() || $("[name=date]").datepicker("show");
+			if($(this).val()) $(this).removeClass('error');
+			if($("[name=date]").val() && $("[name=persons]").val()) $(".venue .venue_filters .ok").hide();
+			$("[name=date]").val() || $("[name=date]").datepicker("show");
 
-				_this.doSearch();
+			_this.doSearch();
 		});
 
 		$("[name=persons]").change(function() {
-        if($(this).val()) $(this).removeClass('error');
-        if($("[name=date]").val() && $("[name=persons]").val()) $(".venue .venue_filters .ok").hide();
+			if($(this).val()) $(this).removeClass('error');
+			if($("[name=date]").val() && $("[name=persons]").val()) $(".venue .venue_filters .ok").hide();
 
-				_this.setState({
-					seats: parseInt($("[name=persons]").val()) || 0
-				});
-    })
+			_this.setState({
+				seats: parseInt($("[name=persons]").val()) || 0
+			});
+		})
 	}
 
 	doSearch(){
@@ -45,21 +45,21 @@ export default class RoomList extends React.Component{
 		});
 
 		let filterQuery = {
-        page: 1,
-        pageSize: 20,
-        seats: 1,
-        dateTimeFrom: null,
-        dateTimeTo: null,
-        plantId: venueData.plantId,
-        priceFrom: null,
-        priceTo: null,
-        foodBeverageList: null,
-        technologyList: null,
-        rating: null,
-        orderBy: null,
-        orderDirection: null,
-        cityId: null
-    };
+			page: 1,
+			pageSize: 20,
+			seats: 1,
+			dateTimeFrom: null,
+			dateTimeTo: null,
+			plantId: venueData.plantId,
+			priceFrom: null,
+			priceTo: null,
+			foodBeverageList: null,
+			technologyList: null,
+			rating: null,
+			orderBy: null,
+			orderDirection: null,
+			cityId: null
+		};
 
 		let dateStr = new Date(date).toISOString().split('T')[0];
 
@@ -107,7 +107,15 @@ export default class RoomList extends React.Component{
 
 		return (
 			<div className="col-sm-12 col-md-12 col-lg-12 room-cards">
-				{ rooms.map(this.renderItem) }
+				<div className="room-list-heading">
+					<h2 className="name">{ lang.venueAvailableRooms }</h2>
+					<div className="options">Välj tillval i nästa steg! <i className="fa fa-check"></i> Mat &amp; dryck <i className="fa fa-check"></i> Möblering <i className="fa fa-check"></i> Teknik
+						<div className="pull-right">{ lang.exVAT }</div>
+					</div>
+				</div>
+				<div>
+					{ rooms.map(this.renderItem) }
+				</div>
 			</div>
 		);
 	}
