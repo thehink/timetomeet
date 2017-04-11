@@ -8,32 +8,15 @@ import "./RoomCard.scss";
 
 export default class RoomCard extends React.Component {
 
-constructor(props) {
-	super(props)
+	constructor(props) {
+		super(props)
 
-	this.handleResize = this.handleResize.bind(this);
-}
-state = {imgHeight: "auto", buttonDivHeight: "auto"}
+		this.handleResize = this.handleResize.bind(this);
+	}
+	state = {imgHeight: "auto", buttonDivHeight: "auto"}
 
 	componentDidMount() {
-
-		this.setState({buttonDivHeight: (this.room_card.clientHeight + 28).toString() + "px"});
-
-		if(window.innerWidth > 768) {
-			this.setState({
-				imgHeight: (this.room_card.clientHeight + 28).toString() + "px",
-				initialHeight: (this.room_card.clientHeight + 28).toString() + "px",
-				buttonDivHeight: (this.room_card.clientHeight + 28).toString() + "px"
-
-			});
-		} else {
-			this.setState({
-				imgHeight: "200px",
-				initialHeight: this.room_card.clientHeight.toString() + "px",
-				buttonDivHeight: "auto"
-			});
-		}
-
+		this.handleResize();
 		window.addEventListener('resize', this.handleResize);
 	}
 
@@ -43,13 +26,17 @@ state = {imgHeight: "auto", buttonDivHeight: "auto"}
 
 	handleResize() {
 
+		let cardHeight = this.room_card.clientHeight;
+
 		if(window.innerWidth < 768) {
-			this.setState({imgHeight: "200px", buttonDivHeight: "auto"});
+			this.setState({
+				imgHeight: "200px",
+				buttonDivHeight: "auto"
+			});
 		} else {
 			this.setState({
-				parentHeight: window.getComputedStyle(this.room_card, null).getPropertyValue("height"),
-				imgHeight: this.state.parentHeight,
-				buttonDivHeight: this.room_card.clientHeigh.toString() + "px"
+				imgHeight: `${cardHeight}px`,
+				buttonDivHeight: `${cardHeight}px`
 			});
 		}
 
