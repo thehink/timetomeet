@@ -2,11 +2,20 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	height: 100%;
+
+	@media (max-width: 768px) {
+	  justify-content: flex-start;
+	}
 
 	&.row > div{
 		margin: 0;
 		padding: 0;
+	}
+
+	&.row > .booking-wrapper{
+		margin-top: 10px;
 	}
 
 	.price{
