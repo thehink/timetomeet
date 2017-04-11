@@ -58,6 +58,8 @@ state = {imgHeight: "auto", buttonDivHeight: "auto"}
 
 	render() {
 
+		console.log(this.state.parentHeight);
+
 		return (
 
 			<div className="row room-card">
