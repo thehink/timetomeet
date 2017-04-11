@@ -16,7 +16,8 @@ export default class RoomCard extends React.Component {
 	state = {imgHeight: "auto", buttonDivHeight: "auto"}
 
 	componentDidMount() {
-		this.handleResize();
+
+		setTimeout(this.handleResize, 100);
 		window.addEventListener('resize', this.handleResize);
 	}
 
