@@ -42,16 +42,31 @@ export default class RoomSelect extends React.Component {
 		});
 	}
 
+	niceTime(time){
+		return time.split(':').slice(0,2).join(':');
+	}
+
 	render() {
+
+		const {
+			preNoonAvailabilityHourStart,
+			preNoonAvailabilityHourEnd,
+			afterNoonAvailabilityHourStart,
+			afterNoonAvailabilityHourEnd
+		} = this.props.room;
+
+
 		return (
-			<div className="room-select">
-				<Select onChange={ this.handleChange.bind(this) } className="room-select_dropdown" name="time_period" selected={ this.state.selected }>
-					<Option value="0">Förmiddag från <small>8:00 - 12:00</small></Option>
-					<Option value="1">Eftermiddag från <small>12:00 - 16:00</small></Option>
-					<Option value="2">Heldag från <small>8:00 - 16:00</small></Option>
+			<div className="room-select row">
+				<hr className="hidden-sm hidden-md hidden-lg" />
+
+				<Select onChange={ this.handleChange.bind(this) } className="room-select_dropdown col-xs-7 col-md-12" name="time_period" selected={ this.state.selected }>
+					<Option value="0">Förmiddag <small>{ this.niceTime(preNoonAvailabilityHourStart) } - { this.niceTime(preNoonAvailabilityHourEnd) }</small></Option>
+					<Option value="1">Eftermiddag <small>{ this.niceTime(afterNoonAvailabilityHourStart) } - { this.niceTime(afterNoonAvailabilityHourEnd) }</small></Option>
+					<Option value="2">Heldag <small>{ this.niceTime(preNoonAvailabilityHourStart) } - { this.niceTime(afterNoonAvailabilityHourEnd) }</small></Option>
 				</Select>
 
-				<div className="booking-wrapper">
+				<div className="booking-wrapper col-xs-5 col-md-12">
 					<h3 className="price">{ this.state.prices[this.state.selected] } kr</h3>
 					<a className="booking-button btn btn-success" href="#" onClick={ this.handleBookingClick.bind(this) }>Boka</a>
 				</div>
