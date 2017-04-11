@@ -28,17 +28,13 @@ export default class RoomCard extends React.Component {
 
 		let cardHeight = this.room_card.clientHeight;
 
-		if(window.innerWidth < 768) {
-			this.setState({
-				imgHeight: "200px",
-				buttonDivHeight: "auto"
-			});
-		} else {
-			this.setState({
-				imgHeight: `${cardHeight}px`,
-				buttonDivHeight: `${cardHeight}px`
-			});
-		}
+		let imgHeight = window.innerWidth < 768 ? '200px' : `${cardHeight}px`;
+		let buttonDivHeight = window.innerWidth < 992 ? 'auto' : `${cardHeight}px`;
+
+		this.setState({
+			imgHeight,
+			buttonDivHeight
+		});
 
 
 	}

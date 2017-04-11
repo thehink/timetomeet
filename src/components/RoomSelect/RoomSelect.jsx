@@ -64,7 +64,7 @@ export default class RoomSelect extends React.Component {
 
 		return (
 			<div className="room-select">
-				<hr className="hidden-sm hidden-md hidden-lg" />
+				<hr className="hidden-md hidden-lg" />
 
 				<Select onChange={ this.handleChange.bind(this) } className="room-select_dropdown" name="time_period" selected={ this.state.selected }>
 					<Option value="0">Förmiddag <small>{ this.niceTime(preNoonAvailabilityHourStart) } - { this.niceTime(preNoonAvailabilityHourEnd) }</small></Option>
