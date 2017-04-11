@@ -47,7 +47,7 @@ state = {imgHeight: "auto", buttonDivHeight: "auto"}
 			this.setState({imgHeight: this.state.parentHeight});
 		}
 
-		console.log(this.state.parentHeight);
+
 	}
 
 	render() {

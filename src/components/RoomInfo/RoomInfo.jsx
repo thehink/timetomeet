@@ -48,8 +48,6 @@ export default class RoomInfo extends React.Component {
 	render() {
 
 
-console.log(this);
-
 		return (
 
 			<div className="room-info">
