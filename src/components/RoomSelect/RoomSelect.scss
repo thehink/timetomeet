@@ -5,6 +5,10 @@
 	justify-content: space-between;
 	height: 100%;
 
+	hr{
+		width: 100%;
+	}
+
 	@media (max-width: 768px) {
 	  justify-content: flex-start;
 	}
@@ -32,12 +36,19 @@
 .room-select_dropdown{
 	height: auto !important;
 
-	button{
+	ul{
 		width: 100%;
 	}
 
+	button{
+		width: 100%;
+		white-space: normal;
+	}
+
 	small{
+		display: block;
 		color: #9B9B9B;
-		margin: 0 16px 0 13px;
+		margin: 0 16px 0 0;
+		width: 100%;
 	}
 }

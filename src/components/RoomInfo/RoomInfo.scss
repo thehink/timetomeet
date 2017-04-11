@@ -1,4 +1,7 @@
 .room-info {
+
+	border-right: 1px solid #DADADA;
+
 	h1 {
 		font-family: "montserrat-bold";
 		font-size: 24px;
@@ -38,10 +41,7 @@
 		margin-bottom: 10px;
 	}
 	hr {
-		border: none;
-		height: 1px;
-		background: #C7C7C7;
-		margin-bottom: 14px;
+		margin-right: 30px;
 	}
 
 }
