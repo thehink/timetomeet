@@ -1,5 +1,13 @@
 .room-select {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 	height: 100%;
+
+	&.row > div{
+		margin: 0;
+		padding: 0;
+	}
 
 	.price{
 		color: #40B436;
