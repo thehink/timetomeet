@@ -13,6 +13,7 @@ import './styles/booking.scss';
 import './styles/widgets.scss';
 
 import './styles/icons.scss';
+import './styles/facilityicons.scss';
 import './styles/globals.scss';
 
 import Header from './components/Header';

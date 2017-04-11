@@ -3,7 +3,7 @@ import React from 'React';
 import "./RoomInfo.scss";
 
 
-import {Projector} from "../../../public/assets/images/new_icons/inlineIcons.jsx";
+import {Projector, Wifi, ProjectorCanvas, Whiteboard} from "../../../public/assets/images/new_icons/inlineIcons.jsx";
 
 export default class RoomInfo extends React.Component {
 
@@ -18,12 +18,20 @@ export default class RoomInfo extends React.Component {
 
 		switch(item.name) {
 			case "Projektor":
-			icon = <Projector class="projector" />;
+			icon = <Projector />;
 			break;
 
-			// case "Internet access (trådlös eller fast)":
-			// icon = <Internet class="internet" />;
-			// break;
+			case "Internet access (trådlös eller fast)":
+			icon = <Wifi />;
+			break;
+
+			case "Projektorduk":
+			icon = <ProjectorCanvas />;
+			break;
+
+			case "Whiteboard":
+			icon = <Whiteboard />;
+			break;
 		}
 
 
@@ -39,8 +47,8 @@ export default class RoomInfo extends React.Component {
 
 	render() {
 
-		console.log(this);
 
+console.log(this);
 
 		return (
 
