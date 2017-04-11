@@ -4,12 +4,6 @@ import "./RoomImage.scss";
 
 export default class RoomImage extends React.Component {
 
-constructor(props) {
-	super(props)
-
-this.imageRender = this.imageRender.bind(this);
-}
-
 	render() {
 
 		let image = this.props.image || '/assets/images/noimg.gif';
