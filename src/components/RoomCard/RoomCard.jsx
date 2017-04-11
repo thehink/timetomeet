@@ -61,7 +61,7 @@ state = {imgHeight: "auto", buttonDivHeight: "auto"}
 				<div ref={input => this.room_card = input} className="col-md-5 col-sm-6 col-xs-12">
 					<RoomInfo info={this.props.room} />
 				</div>
-				<div className="col-md-3 col-sm-12 col-xs-12" style={{height: this.state.buttonDivHeight}}>
+				<div className="col-md-3 col-sm-12 col-xs-12" style={{height: this.state.imgHeight}}>
 					<RoomSelect room={ this.props.room } />
 				</div>
 			</div>
